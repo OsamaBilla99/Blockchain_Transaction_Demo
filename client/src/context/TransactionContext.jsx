@@ -23,7 +23,6 @@ const getEthereumContract = () => {
     });
 
 }
-//test
 export const TransactionProvider = ({ children }) => {
     // 
     const [currentAccount, setCurrentAccount ] = useState('');
