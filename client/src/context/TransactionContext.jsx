@@ -20,15 +20,16 @@ const getEthereumContract = () => {
 
 }
 export const TransactionProvider = ({ children }) => {
-    // 
+    
     const [currentAccount, setCurrentAccount ] = useState('');
-    const [formData, setFormData] = useState({ addressTo: '', amount: '', keyword: '', message: ''});
+    const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
     const [isLoading, setIsLoading] = useState(false);
     const [transactionCount, setTransactioncount] = useState(localStorage.getItem('transactionCount'));
 
     const handleChange = (e, name) => {
-        setFormData((prevState) => ({ ...prevState, [name]: e.target.value }));
-    }
+        setformData((prevState) => ({ ...prevState, [name]: e.target.value }));
+      };
+    
 
     // kan hente ethereum accounts som er connected i nettleseren via metamask
     const checkIfWalletIsConnected = async () => {
@@ -39,9 +40,11 @@ export const TransactionProvider = ({ children }) => {
 
             const accounts = await ethereum.request({ method: 'eth_accounts' });
 
+            console.log(accounts[0])
+
             if(accounts.length) {
                 setCurrentAccount(accounts[0]);
-
+                console.log(accounts[0])
                 // getAllTransactions();
             } else {
                 console.log('No accounts found');
@@ -62,6 +65,7 @@ export const TransactionProvider = ({ children }) => {
             const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
 
             setCurrentAccount(accounts[0]);
+            console.log(accounts[0])
         } catch (error) {
             console.log(error);
 
@@ -109,7 +113,7 @@ export const TransactionProvider = ({ children }) => {
     }, []);
 
     return (
-        <TransactionContext.Provider value={{ connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction }}>
+        <TransactionContext.Provider value={{ connectWallet, currentAccount, formData, setformData, handleChange, sendTransaction }}>
             {children}
         </TransactionContext.Provider>
     );
