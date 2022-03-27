@@ -4,4 +4,7 @@ The application requires you to have installed Metamask in order for it to work.
 
 -----------------------------------------------------
 
- fsdfsdfsdf
+Main motivation for this project was to get a hands-on experience with Solidity and smart contracts.
+
+The overall experience was fun, and Solidity felt very familiar in terms of syntax and functions.
+Smart contracts can be very simple and straight-forward.
