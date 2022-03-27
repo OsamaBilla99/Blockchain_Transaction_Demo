@@ -1,6 +1,16 @@
 # Web3.0 Application
-This repository contains a web application that allows users to send ethereum from one wallet to another.
-The application requires you to have installed Metamask in order for it to work.
+This repository contains a web application that allows users to send ethereum from one wallet to another.  
+The smart contract is deployed to the Ropsten Test Network and therefore requires a Metamaska account connected to the Ropsten network.
+
+-----------------------------------------------------
+
+To test the application, go through the following steps:
+
+-----------------------------------------------------
+Clone the repo and run npm install on both folders  
+Cd into client folder and run the command "npm run dev" in terminal  
+Install Metamask, connect it to Ropsten Test Network and aquire free test ethereum from a ropsten faucet  
+Create a secondary account within your Metamask wallet, and send ethereum from your first account to your second account  
 
 -----------------------------------------------------
 
