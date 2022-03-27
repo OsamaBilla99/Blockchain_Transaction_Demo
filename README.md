@@ -2,11 +2,13 @@
 This repository contains a web application that allows users to send ethereum from one wallet to another.  
 The smart contract is deployed to the Ropsten Test Network and therefore requires a Metamaska account connected to the Ropsten network.
 
+The smart contract can be found in smart_contract/contracts/Transactions.sol
+
 -----------------------------------------------------
 
 To test the application, go through the following steps:
 
-1. Clone the repo and run npm install on both folders  
+1. Clone the repo and run "npm install" on both folders  
 2. Cd into client folder and run the command "npm run dev" in terminal  
 3. Install Metamask, connect it to Ropsten Test Network and aquire free test ethereum from a ropsten faucet  
 4. Create a secondary account within your Metamask wallet, and send ethereum from your first account to your second account  
