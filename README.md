@@ -17,7 +17,7 @@ To test the application, go through the following steps:
 
 Main motivation for this project was to get a hands-on experience with Solidity and smart contracts.
 
-The overall experience was fun, and Solidity felt very familiar in terms of syntax and functions.  
+The overall experience was fun and very instructive.  <br/>
 Acquired a better understanding of how smart contracts work.  
 A lot of good tools that automate processes, such as deploying a smart contract to the blockchain. Pros of this is that it makes things a lot easier, the cons is that I don't fully understand the automated processes.  
 Solidity was easy to work with and felt familiar in terms of syntax and functions.  
